@@ -14,7 +14,11 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-@NotNullByDefault package com.io7m.junreachable;
+/**
+ * Core types.
+ */
 
-import com.io7m.jnull.NotNullByDefault;
+@NonNullByDefault package com.io7m.junreachable;
+
+import com.io7m.jnull.NonNullByDefault;
 
