@@ -15,6 +15,12 @@
       supposed to be unreachable (but that the compiler cannot prove
       is unreachable).</p>
     </subsection>
+    <subsection name="Features">
+      <ul>
+        <li>Exceptions for marking unreachable code.</li>
+        <li>ISC license.</li>
+      </ul>
+    </subsection>
   </body>
 
 </document>
