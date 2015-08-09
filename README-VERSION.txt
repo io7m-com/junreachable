@@ -1,1 +1,1 @@
-io7m-junreachable 1.0.0
+io7m-junreachable 1.0.1
