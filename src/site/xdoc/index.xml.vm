@@ -5,12 +5,15 @@
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
 
   <properties>
-    <title>io7m-junreachable-documentation</title>
+    <title>io7m-junreachable</title>
   </properties>
 
   <body>
-    <subsection name="junreachable-documentation">
-      The <var>junreachable-documentation</var> package contains the documentation for the project.
+    <subsection name="junreachable">
+      <p>The <var>junreachable</var> package implements a set
+      of exception types for unambiguously marking code that is
+      supposed to be unreachable (but that the compiler cannot prove
+      is unreachable).</p>
     </subsection>
   </body>
 
