@@ -74,7 +74,7 @@ int f(
       return 3;
     }
   }
-  
+
   throw new UnreachableCodeException();
 }</pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss1pg3" href="#st200_p2s1ss1pg3">3</a></div><div class="st200_paragraph">
           The code now compiles. The code is robust in the face of later
@@ -82,7 +82,7 @@ int f(
           the code understands that the original writer expected the code
           to be unreachable. Anyone running the code and somehow managing
           to reach the unreachable section is greeted with an unambiguous
-          exception that states that a bug has been discovered (and the 
+          exception that states that a bug has been discovered (and the
           stack trace will indicate exactly where this happened).
         </div></div></div><div class="st200_subsection_container"><div class="st200_subsection_title_number"><a id="st200_p2s1ss2" href="#st200_p2s1ss2">2.1.2</a></div><div class="st200_subsection_title">Unimplemented code</div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss2pg1" href="#st200_p2s1ss2pg1">1</a></div><div class="st200_paragraph">
           Most Java development environments will automatically produce
@@ -91,7 +91,7 @@ int f(
         </div></div><div class="st200_formal_item"><div class="st200_formal_item_title"><a id="st200_p2s1ss2fo1" href="#st200_p2s1ss2fo1">2.1.2.1. Generated method stubs</a></div><pre class="st200_verbatim">@Override void someInterfaceMethod()
 {
   // TODO: Auto-generated method stub
-}          
+}
 </pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss2pg2" href="#st200_p2s1ss2pg2">2</a></div><div class="st200_paragraph">
           The programmer doesn't always have a complete implementation
           ready immediately, and unfortunately nothing stops anyone from
@@ -102,14 +102,14 @@ int f(
 {
   // TODO: Auto-generated method stub
   throw new UnimplementedCodeException();
-}          
+}
 </pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss2pg3" href="#st200_p2s1ss2pg3">3</a></div><div class="st200_paragraph">
           Discovering unimplemented code is now as simple as searching
           for uses of <span class="st200_term type">UnimplementedCodeException</span>
           in the codebase. Anyone managing to execute unimplemented code will
           be greeted with an exception that states exactly which code is
           unimplemented. Most development environments can be instructed to
-          automatically generate code that throws 
+          automatically generate code that throws
           <span class="st200_term type">UnimplementedCodeException</span>
           exceptions as in the above example.
         </div></div></div></div><div class="st200_navbar st200_navbar_bottom"><hr class="st200_hr"/><table class="st200_navbar_table" summary="Navigation bar"><tr><td class="st200_navbar_prev_file_cell"><a href="p2.xhtml#st200_p2">Previous</a></td><td class="st200_navbar_up_file_cell"><a href="p2.xhtml#st200_p2">Up</a></td><td class="st200_navbar_next_file_cell"><a href="p3.xhtml#st200_p3">Next</a></td></tr><tr><td class="st200_navbar_prev_title_cell">2. Usage</td><td class="st200_navbar_up_title_cell">2. Usage</td><td class="st200_navbar_next_title_cell">3. API Reference</td></tr></table></div></div></body></html>
