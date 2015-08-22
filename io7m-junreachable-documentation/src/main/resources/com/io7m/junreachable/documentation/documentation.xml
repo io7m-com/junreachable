@@ -17,7 +17,7 @@
   -->
 
 <s:document
-  xmlns:s="http://schemas.io7m.com/structural/2.0.0"
+  xmlns:s="http://schemas.io7m.com/structural/2.1.0"
   xmlns:xi="http://www.w3.org/2001/XInclude">
   <s:document-title>${project.parent.name} ${project.version} Documentation</s:document-title>
   <s:document-style>documentation.css</s:document-style>
@@ -31,9 +31,9 @@
       <s:subsection>
         <s:subsection-title>Overview</s:subsection-title>
         <s:paragraph>
-          The <s:term s:type="package">${project.parent.name}</s:term> package 
-          implements a set of exception types for unambiguously marking code 
-          that is supposed to be unreachable (but that the compiler cannot 
+          The <s:term s:type="package">${project.parent.name}</s:term> package
+          implements a set of exception types for unambiguously marking code
+          that is supposed to be unreachable (but that the compiler cannot
           prove is unreachable).
         </s:paragraph>
       </s:subsection>
@@ -192,7 +192,7 @@ int f(
       return 3;
     }
   }
-  
+
   throw new UnreachableCodeException();
 }]]></s:verbatim>
         </s:formal-item>
@@ -202,7 +202,7 @@ int f(
           the code understands that the original writer expected the code
           to be unreachable. Anyone running the code and somehow managing
           to reach the unreachable section is greeted with an unambiguous
-          exception that states that a bug has been discovered (and the 
+          exception that states that a bug has been discovered (and the
           stack trace will indicate exactly where this happened).
         </s:paragraph>
       </s:subsection>
@@ -218,7 +218,7 @@ int f(
           <s:verbatim><![CDATA[@Override void someInterfaceMethod()
 {
   // TODO: Auto-generated method stub
-}          
+}
 ]]></s:verbatim>
         </s:formal-item>
         <s:paragraph>
@@ -234,7 +234,7 @@ int f(
 {
   // TODO: Auto-generated method stub
   throw new UnimplementedCodeException();
-}          
+}
 ]]></s:verbatim>
         </s:formal-item>
         <s:paragraph>
@@ -243,7 +243,7 @@ int f(
           in the codebase. Anyone managing to execute unimplemented code will
           be greeted with an exception that states exactly which code is
           unimplemented. Most development environments can be instructed to
-          automatically generate code that throws 
+          automatically generate code that throws
           <s:term s:type="type">UnimplementedCodeException</s:term>
           exceptions as in the above example.
         </s:paragraph>
