@@ -18,6 +18,7 @@
     <subsection name="Features">
       <ul>
         <li>Exceptions for marking unreachable code.</li>
+        <li><a href="https://www.osgi.org/">OSGi</a>-ready.</li>
         <li>ISC license.</li>
       </ul>
     </subsection>
