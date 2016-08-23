@@ -21,6 +21,10 @@ import com.io7m.junreachable.UnreachableCodeException;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * Tests for the package.
+ */
+
 public final class UnreachableTest
 {
   @Test
