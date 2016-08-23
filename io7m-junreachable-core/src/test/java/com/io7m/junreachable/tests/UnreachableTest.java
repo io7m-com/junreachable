@@ -16,44 +16,38 @@
 
 package com.io7m.junreachable.tests;
 
-import org.junit.Test;
-
+import com.io7m.junreachable.UnimplementedCodeException;
 import com.io7m.junreachable.UnreachableCodeException;
+import org.junit.Assert;
+import org.junit.Test;
 
 public final class UnreachableTest
 {
-  enum T
+  @Test
+  public void testUnimplementedMessage()
   {
-    A,
-    B,
-    C
+    Assert.assertNotEquals(null, new UnimplementedCodeException().getMessage());
   }
 
-  int f(
-    final T t)
+  @Test
+  public void testUnimplementedCause()
   {
-    assert t != null;
-
-    switch (t) {
-      case A:
-      {
-        return 1;
-      }
-      case B:
-      {
-        return 2;
-      }
-      case C:
-      {
-        return 3;
-      }
-    }
-
-    throw new UnreachableCodeException();
+    final AssertionError cause = new AssertionError("x");
+    Assert.assertEquals(
+      cause,
+      new UnimplementedCodeException(cause).getCause());
   }
 
-  @Test public void testUnreachable()
+  @Test
+  public void testUnreachableMessage()
   {
-    System.out.println(this.f(T.A));
+    Assert.assertNotEquals(null, new UnreachableCodeException().getMessage());
+  }
+
+  @Test
+  public void testUnreachableCause()
+  {
+    final AssertionError cause = new AssertionError("x");
+    Assert.assertEquals(cause, new UnreachableCodeException(cause).getCause());
   }
 }
