@@ -7,15 +7,19 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.io7m.junreachable</groupId>
-    <artifactId>io7m-junreachable</artifactId>
-    <version>1.0.2</version>
+    <artifactId>com.io7m.junreachable</artifactId>
+    <version>1.0.3-SNAPSHOT</version>
   </parent>
-  <artifactId>io7m-junreachable-core</artifactId>
+  <artifactId>com.io7m.junreachable.core</artifactId>
 
   <packaging>bundle</packaging>
-  <name>io7m-junreachable-core</name>
+  <name>com.io7m.junreachable.core</name>
   <description>Exception types for marking unreachable/unimplemented code (Core)</description>
   <url>http://io7m.github.io/junreachable/</url>
+
+  <properties>
+    <io7m.api.previousArtifactId>io7m-junreachable-core</io7m.api.previousArtifactId>
+  </properties>
 
   <scm>
     <url>${project.parent.scm.url}</url>
@@ -27,7 +31,7 @@
   <dependencies>
     <dependency>
       <groupId>com.io7m.jnull</groupId>
-      <artifactId>io7m-jnull-core</artifactId>
+      <artifactId>com.io7m.jnull.core</artifactId>
     </dependency>
 
     <dependency>
