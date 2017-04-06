@@ -14,30 +14,8 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.io7m.junreachable.documentation;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-
 /**
- * Functions for retrieving the documentation.
+ * Unit tests.
  */
 
-public final class UDocumentation
-{
-  public static URI getDocumentationXMLLocation()
-  {
-    try {
-      final URL url =
-        UDocumentation.class
-          .getResource("/com/io7m/junreachable/documentation/documentation.xml");
-      assert url != null;
-      final URI uri = url.toURI();
-      assert uri != null;
-      return uri;
-    } catch (final URISyntaxException e) {
-      throw new AssertionError(e);
-    }
-  }
-}
+@com.io7m.jnull.NonNullByDefault package com.io7m.junreachable.tests;

@@ -14,46 +14,41 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.io7m.junreachable.tests;
-
-import org.junit.Test;
+package com.io7m.junreachable.documentation;
 
 import com.io7m.junreachable.UnreachableCodeException;
 
-public final class UnreachableTest
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
+/**
+ * Functions for retrieving the documentation.
+ */
+
+public final class UDocumentation
 {
-  enum T
+  private UDocumentation()
   {
-    A,
-    B,
-    C
-  }
-
-  int f(
-    final T t)
-  {
-    assert t != null;
-
-    switch (t) {
-      case A:
-      {
-        return 1;
-      }
-      case B:
-      {
-        return 2;
-      }
-      case C:
-      {
-        return 3;
-      }
-    }
-
     throw new UnreachableCodeException();
   }
 
-  @Test public void testUnreachable()
+  /**
+   * @return The documentation URI
+   */
+
+  public static URI getDocumentationXMLLocation()
   {
-    System.out.println(this.f(T.A));
+    try {
+      final URL url =
+        UDocumentation.class
+          .getResource("/com/io7m/junreachable/documentation/documentation.xml");
+      assert url != null;
+      final URI uri = url.toURI();
+      assert uri != null;
+      return uri;
+    } catch (final URISyntaxException e) {
+      throw new AssertionError(e);
+    }
   }
 }

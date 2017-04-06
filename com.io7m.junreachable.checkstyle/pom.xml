@@ -7,15 +7,19 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.io7m.junreachable</groupId>
-    <artifactId>io7m-junreachable</artifactId>
-    <version>1.0.2</version>
+    <artifactId>com.io7m.junreachable</artifactId>
+    <version>1.0.3</version>
   </parent>
-  <artifactId>io7m-junreachable-checkstyle</artifactId>
+  <artifactId>com.io7m.junreachable.checkstyle</artifactId>
 
   <packaging>jar</packaging>
-  <name>io7m-junreachable-checkstyle</name>
+  <name>com.io7m.junreachable.checkstyle</name>
   <description>~Exception types for marking unreachable/unimplemented code (Checkstyle policy)</description>
   <url>http://io7m.github.io/junreachable/</url>
+
+  <properties>
+    <io7m.api.previousArtifactId>io7m-junreachable-checkstyle</io7m.api.previousArtifactId>
+  </properties>
 
   <scm>
     <url>${project.parent.scm.url}</url>
