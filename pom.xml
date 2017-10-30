@@ -8,12 +8,12 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor</artifactId>
-    <version>1.0.2</version>
+    <version>2.0.0-beta0003</version>
   </parent>
 
   <groupId>com.io7m.junreachable</groupId>
   <artifactId>com.io7m.junreachable</artifactId>
-  <version>1.0.3</version>
+  <version>2.0.0-beta0001</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.junreachable</name>
@@ -31,8 +31,7 @@
     <siteDocumentationDirectory>com/io7m/junreachable/com.io7m.junreachable.documentation</siteDocumentationDirectory>
     <io7m.checkstyle.artifact>com.io7m.junreachable.checkstyle</io7m.checkstyle.artifact>
     <io7m.checkstyle.path>/com/io7m/junreachable/checkstyle/checkstyle.xml</io7m.checkstyle.path>
-    <io7m.api.previousVersion>1.0.2</io7m.api.previousVersion>
-    <io7m.javadoc.docLint/>
+    <io7m.api.previousVersion>1.0.3</io7m.api.previousVersion>
   </properties>
 
   <licenses>
@@ -92,7 +91,7 @@
       <dependency>
         <groupId>com.io7m.jnull</groupId>
         <artifactId>com.io7m.jnull.core</artifactId>
-        <version>[1.0.0, 2.0.0)</version>
+        <version>2.0.0-beta0001</version>
       </dependency>
 
       <dependency>
@@ -106,14 +105,14 @@
   <build>
     <pluginManagement>
       <plugins>
-        <!-- Require JDK >= 1.6 -->
+        <!-- Require JDK >= 9 -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
-            <source>1.6</source>
-            <target>1.6</target>
-            <optimize>true</optimize>
+            <source>9</source>
+            <target>9</target>
+            <release>9</release>
           </configuration>
         </plugin>
 
