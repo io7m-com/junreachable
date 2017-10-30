@@ -18,7 +18,5 @@
  * Core types.
  */
 
-@NonNullByDefault package com.io7m.junreachable;
-
-import com.io7m.jnull.NonNullByDefault;
-
+@com.io7m.jnull.NonNullByDefault
+package com.io7m.junreachable;

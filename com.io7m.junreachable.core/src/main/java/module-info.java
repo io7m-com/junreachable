@@ -16,5 +16,7 @@
 
 module com.io7m.junreachable.core
 {
+  requires com.io7m.jnull.core;
+
   exports com.io7m.junreachable;
 }
