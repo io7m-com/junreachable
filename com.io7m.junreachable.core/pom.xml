@@ -17,13 +17,6 @@
   <description>Exception types for marking unreachable/unimplemented code (Core)</description>
   <url>http://io7m.github.io/junreachable/</url>
 
-  <scm>
-    <url>${project.parent.scm.url}</url>
-    <connection>${project.parent.scm.connection}</connection>
-    <developerConnection>${project.parent.scm.developerConnection}
-    </developerConnection>
-  </scm>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
