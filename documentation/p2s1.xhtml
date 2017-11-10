@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>com.io7m.junreachable 2.0.0-beta0003 Documentation: 2.1. Exceptions</title><link rel="stylesheet" type="text/css" href="jstructural-2.0.0-layout.css"/><link rel="stylesheet" type="text/css" href="jstructural-2.0.0-colour.css"/><link rel="stylesheet" type="text/css" href="documentation.css"/></head><body><div class="st200_body"><div class="brand">
+  <div class="brand_left">
+    <a href="http://io7m.com/">io7m</a>
+  </div>
+  <div class="brand_right">
+    <a href="http://github.com/io7m/junreachable">com.io7m.junreachable</a> 2.0.0-beta0003
+  </div>
+</div><div class="st200_navbar st200_navbar_top"><table class="st200_navbar_table" summary="Navigation bar"><tr><td class="st200_navbar_prev_title_cell">2. Usage</td><td class="st200_navbar_up_title_cell">2. Usage</td><td class="st200_navbar_next_title_cell">3. API Reference</td></tr><tr><td class="st200_navbar_prev_file_cell"><a href="p2.xhtml#st200_p2">Previous</a></td><td class="st200_navbar_up_file_cell"><a href="p2.xhtml#st200_p2">Up</a></td><td class="st200_navbar_next_file_cell"><a href="p3.xhtml#st200_p3">Next</a></td></tr></table><hr class="st200_hr"/></div><div class="st200_section_container"><div class="st200_section_title_number"><a id="st200_p2s1" href="#st200_p2s1">2.1</a></div><div class="st200_section_title">Exceptions</div><div class="st200_subsection_container"><div class="st200_subsection_title_number"><a id="st200_p2s1ss1" href="#st200_p2s1ss1">2.1.1</a></div><div class="st200_subsection_title">Unreachable</div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss1pg1" href="#st200_p2s1ss1pg1">1</a></div><div class="st200_paragraph">
+          The Java compiler typically cannot detect unreachable cases
+          in, for example, switch statements:
+        </div></div><div class="st200_formal_item"><div class="st200_formal_item_title"><a id="st200_p2s1ss1fo1" href="#st200_p2s1ss1fo1">2.1.1.1. Unreachable switch</a></div><pre class="st200_verbatim">enum T
+{
+  A,
+  B,
+  C
+}
+
+int f(
+  final T t)
+{
+  assert t != null;
+
+  switch (t) {
+    case A:
+    {
+      return 1;
+    }
+    case B:
+    {
+      return 2;
+    }
+    case C:
+    {
+      return 3;
+    }
+  }
+}</pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss1pg2" href="#st200_p2s1ss1pg2">2</a></div><div class="st200_paragraph">
+          The function <span class="st200_term function">f</span> will fail to
+          compile due to a missing <span class="st200_term keyword">return</span>
+          statement; even though all possible cases of
+          <span class="st200_term type">T</span> are handled, the compiler is
+          not sufficiently intelligent to determine this. Naive developers
+          might try to add a <span class="st200_term keyword">default</span> case,
+          but this makes the code fragile with respect to modification; if
+          someone adds an extra value to <span class="st200_term type">T</span>, the
+          code silently becomes incorrect. The correct course of action is to
+          explicitly mark the unreachable code with an exception that unambiguously
+          states the intention:
+        </div></div><div class="st200_formal_item"><div class="st200_formal_item_title"><a id="st200_p2s1ss1fo2" href="#st200_p2s1ss1fo2">2.1.1.2. Unreachable switch (fixed)</a></div><pre class="st200_verbatim">enum T
+{
+  A,
+  B,
+  C
+}
+
+int f(
+  final T t)
+{
+  assert t != null;
+
+  switch (t) {
+    case A:
+    {
+      return 1;
+    }
+    case B:
+    {
+      return 2;
+    }
+    case C:
+    {
+      return 3;
+    }
+  }
+
+  throw new UnreachableCodeException();
+}</pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss1pg3" href="#st200_p2s1ss1pg3">3</a></div><div class="st200_paragraph">
+          The code now compiles. The code is robust in the face of later
+          modification of <span class="st200_term type">T</span>. Anyone reading
+          the code understands that the original writer expected the code
+          to be unreachable. Anyone running the code and somehow managing
+          to reach the unreachable section is greeted with an unambiguous
+          exception that states that a bug has been discovered (and the
+          stack trace will indicate exactly where this happened).
+        </div></div></div><div class="st200_subsection_container"><div class="st200_subsection_title_number"><a id="st200_p2s1ss2" href="#st200_p2s1ss2">2.1.2</a></div><div class="st200_subsection_title">Unimplemented code</div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss2pg1" href="#st200_p2s1ss2pg1">1</a></div><div class="st200_paragraph">
+          Most Java development environments will automatically produce
+          empty method stubs when the programmer attempts to implement
+          an interface. The generated methods typically look something like:
+        </div></div><div class="st200_formal_item"><div class="st200_formal_item_title"><a id="st200_p2s1ss2fo1" href="#st200_p2s1ss2fo1">2.1.2.1. Generated method stubs</a></div><pre class="st200_verbatim">@Override void someInterfaceMethod()
+{
+  // TODO: Auto-generated method stub
+}
+</pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss2pg2" href="#st200_p2s1ss2pg2">2</a></div><div class="st200_paragraph">
+          The programmer doesn't always have a complete implementation
+          ready immediately, and unfortunately nothing stops anyone from
+          running the as-yet unimplemented methods. The correct course of
+          action is to explicitly mark this unimplemented code with an
+          exception type that unambiguously states the nature of the code:
+        </div></div><div class="st200_formal_item"><div class="st200_formal_item_title"><a id="st200_p2s1ss2fo2" href="#st200_p2s1ss2fo2">2.1.2.2. Generated method stubs (fixed)</a></div><pre class="st200_verbatim">@Override void someInterfaceMethod()
+{
+  // TODO: Auto-generated method stub
+  throw new UnimplementedCodeException();
+}
+</pre></div><div class="st200_paragraph_container"><div class="st200_paragraph_number"><a id="st200_p2s1ss2pg3" href="#st200_p2s1ss2pg3">3</a></div><div class="st200_paragraph">
+          Discovering unimplemented code is now as simple as searching
+          for uses of <span class="st200_term type">UnimplementedCodeException</span>
+          in the codebase. Anyone managing to execute unimplemented code will
+          be greeted with an exception that states exactly which code is
+          unimplemented. Most development environments can be instructed to
+          automatically generate code that throws
+          <span class="st200_term type">UnimplementedCodeException</span>
+          exceptions as in the above example.
+        </div></div></div></div><div class="st200_navbar st200_navbar_bottom"><hr class="st200_hr"/><table class="st200_navbar_table" summary="Navigation bar"><tr><td class="st200_navbar_prev_file_cell"><a href="p2.xhtml#st200_p2">Previous</a></td><td class="st200_navbar_up_file_cell"><a href="p2.xhtml#st200_p2">Up</a></td><td class="st200_navbar_next_file_cell"><a href="p3.xhtml#st200_p3">Next</a></td></tr><tr><td class="st200_navbar_prev_title_cell">2. Usage</td><td class="st200_navbar_up_title_cell">2. Usage</td><td class="st200_navbar_next_title_cell">3. API Reference</td></tr></table></div></div></body></html>

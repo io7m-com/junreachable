@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.io7m.junreachable.documentation","l":"UDocumentation"},{"p":"com.io7m.junreachable","l":"UnimplementedCodeException"},{"p":"com.io7m.junreachable","l":"UnreachableCodeException"}]
