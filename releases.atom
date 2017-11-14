@@ -6,45 +6,35 @@
   </a:author>
   <a:id>http://github.com/io7m/junreachable/releases.atom</a:id>
   <a:title>com.io7m.junreachable Releases</a:title>
-  <a:updated>2017-10-25T00:00:00</a:updated>
+  <a:updated>2017-11-14T18:55:51+00:00</a:updated>
   <a:entry>
-    <a:id>0</a:id>
-    <a:updated>2017-10-25T00:00:00</a:updated>
-    <a:published>2017-10-25T00:00:00</a:published>
+    <a:id>2.0.0</a:id>
+    <a:updated>2017-10-25T00:00:00+00:00</a:updated>
     <a:title>com.io7m.junreachable 2.0.0 released</a:title>
-    <a:content type="text"> com.io7m.junreachable 2.0.0 released
-      </a:content>
+    <a:content type="text">com.io7m.junreachable 2.0.0 released</a:content>
   </a:entry>
   <a:entry>
-    <a:id>1</a:id>
-    <a:updated>2017-04-06T00:00:00</a:updated>
-    <a:published>2017-04-06T00:00:00</a:published>
+    <a:id>1.0.3</a:id>
+    <a:updated>2017-04-06T00:00:00+00:00</a:updated>
     <a:title>com.io7m.junreachable 1.0.3 released</a:title>
-    <a:content type="text"> com.io7m.junreachable 1.0.3 released
-      </a:content>
+    <a:content type="text">com.io7m.junreachable 1.0.3 released</a:content>
   </a:entry>
   <a:entry>
-    <a:id>2</a:id>
-    <a:updated>2016-08-03T00:00:00</a:updated>
-    <a:published>2016-08-03T00:00:00</a:published>
+    <a:id>1.0.2</a:id>
+    <a:updated>2016-08-03T00:00:00+00:00</a:updated>
     <a:title>com.io7m.junreachable 1.0.2 released</a:title>
-    <a:content type="text"> com.io7m.junreachable 1.0.2 released
-      </a:content>
+    <a:content type="text">com.io7m.junreachable 1.0.2 released</a:content>
   </a:entry>
   <a:entry>
-    <a:id>3</a:id>
-    <a:updated>2015-08-09T00:00:00</a:updated>
-    <a:published>2015-08-09T00:00:00</a:published>
+    <a:id>1.0.1</a:id>
+    <a:updated>2015-08-09T00:00:00+00:00</a:updated>
     <a:title>com.io7m.junreachable 1.0.1 released</a:title>
-    <a:content type="text"> com.io7m.junreachable 1.0.1 released
-      </a:content>
+    <a:content type="text">com.io7m.junreachable 1.0.1 released</a:content>
   </a:entry>
   <a:entry>
-    <a:id>4</a:id>
-    <a:updated>2014-06-22T00:00:00</a:updated>
-    <a:published>2014-06-22T00:00:00</a:published>
+    <a:id>1.0.0</a:id>
+    <a:updated>2014-06-22T00:00:00+00:00</a:updated>
     <a:title>com.io7m.junreachable 1.0.0 released</a:title>
-    <a:content type="text"> com.io7m.junreachable 1.0.0 released
-      </a:content>
+    <a:content type="text">com.io7m.junreachable 1.0.0 released</a:content>
   </a:entry>
 </a:feed>
