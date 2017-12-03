@@ -18,37 +18,14 @@ package com.io7m.junreachable.documentation;
 
 import com.io7m.junreachable.UnreachableCodeException;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-
 /**
- * Functions for retrieving the documentation.
+ * Documentation marker class.
  */
 
-public final class UDocumentation
+public final class Documentation
 {
-  private UDocumentation()
+  private Documentation()
   {
     throw new UnreachableCodeException();
-  }
-
-  /**
-   * @return The documentation URI
-   */
-
-  public static URI getDocumentationXMLLocation()
-  {
-    try {
-      final URL url =
-        UDocumentation.class
-          .getResource("/com/io7m/junreachable/documentation/documentation.xml");
-      assert url != null;
-      final URI uri = url.toURI();
-      assert uri != null;
-      return uri;
-    } catch (final URISyntaxException e) {
-      throw new AssertionError(e);
-    }
   }
 }

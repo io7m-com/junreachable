@@ -15,10 +15,12 @@
  */
 
 /**
- * Core types.
+ * Documentation.
  */
 
-module com.io7m.junreachable.core
+module com.io7m.junreachable.documentation
 {
-  exports com.io7m.junreachable;
+  requires com.io7m.junreachable.core;
+
+  exports com.io7m.junreachable.documentation;
 }
