@@ -1,1 +1,1 @@
-packageSearchIndex = [{"m":"com.io7m.junreachable.core","l":"com.io7m.junreachable"},{"m":"com.io7m.junreachable.core","l":"com.io7m.junreachable.documentation"}]
+packageSearchIndex = [{"m":"com.io7m.junreachable.core","l":"com.io7m.junreachable"},{"m":"com.io7m.junreachable.documentation","l":"com.io7m.junreachable.documentation"}]

@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"com.io7m.junreachable.core"}]
+moduleSearchIndex = [{"l":"com.io7m.junreachable.core"},{"l":"com.io7m.junreachable.documentation"}]
