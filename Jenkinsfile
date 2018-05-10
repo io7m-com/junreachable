@@ -17,9 +17,7 @@ pipeline {
             maven 'maven-3.5.3'
           }
           steps {
-            ansiColor('xterm') {
-              sh 'mvn clean verify'
-            }
+            sh 'mvn clean verify'
           }
         }
         stage('macOS-openjdk-10-hotspot') {
@@ -29,9 +27,7 @@ pipeline {
             maven 'maven-3.5.3'
           }
           steps {
-            ansiColor('xterm') {
-              sh 'mvn clean verify'
-            }
+            sh 'mvn clean verify'
           }
         }
       }
