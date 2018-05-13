@@ -34,9 +34,14 @@
         <c:change date="2018-05-13T00:00:00+00:00" summary="Use primogenitor 2.1.0"/>
       </c:changes>
     </c:release>
-    <c:release date="2018-05-13T09:58:57+00:00" ticket-system="com.github.io7m.junreachable" version="2.1.1">
+    <c:release date="2018-05-13T00:00:00+00:00" ticket-system="com.github.io7m.junreachable" version="2.1.1">
       <c:changes>
-        <c:change date="2018-05-13T09:58:57+00:00" summary="Correctly update version in POM"/>
+        <c:change date="2018-05-13T00:00:00+00:00" summary="Correctly update version in POM"/>
+      </c:changes>
+    </c:release>
+    <c:release date="2018-05-13T14:23:56+00:00" ticket-system="com.github.io7m.junreachable" version="3.0.0">
+      <c:changes>
+        <c:change compatible="false" date="2018-05-13T14:23:56+00:00" module="com.io7m.junreachable.checkstyle" summary="Removed the com.io7m.junreachable.checkstyle module in favour of the common com.io7m.checkstyle_rules module"/>
       </c:changes>
     </c:release>
   </c:releases>
