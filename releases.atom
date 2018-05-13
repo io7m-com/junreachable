@@ -6,7 +6,19 @@
   </a:author>
   <a:id>http://github.com/io7m/junreachable/releases.atom</a:id>
   <a:title>com.io7m.junreachable Releases</a:title>
-  <a:updated>2017-12-07T11:38:58+00:00</a:updated>
+  <a:updated>2018-05-13T10:03:50+00:00</a:updated>
+  <a:entry>
+    <a:id>2.1.1</a:id>
+    <a:updated>2018-05-13T00:00:00+00:00</a:updated>
+    <a:title>com.io7m.junreachable 2.1.1 released</a:title>
+    <a:content type="text">com.io7m.junreachable 2.1.1 released</a:content>
+  </a:entry>
+  <a:entry>
+    <a:id>2.1.0</a:id>
+    <a:updated>2018-05-13T00:00:00+00:00</a:updated>
+    <a:title>com.io7m.junreachable 2.1.0 released</a:title>
+    <a:content type="text">com.io7m.junreachable 2.1.0 released</a:content>
+  </a:entry>
   <a:entry>
     <a:id>2.0.0</a:id>
     <a:updated>2017-10-25T00:00:00+00:00</a:updated>
