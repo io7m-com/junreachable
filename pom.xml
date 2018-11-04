@@ -2,14 +2,13 @@
 <project
   xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-  child.inherit.append.path="false">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor</artifactId>
-    <version>3.0.0-beta0018</version>
+    <version>3.0.0-beta0019</version>
   </parent>
 
   <groupId>com.io7m.junreachable</groupId>
@@ -37,7 +36,7 @@
     </license>
   </licenses>
 
-  <scm child.inherit.append.path="false">
+  <scm>
     <url>https://github.com/io7m/junreachable</url>
     <connection>scm:git:https://github.com/io7m/junreachable</connection>
     <developerConnection>scm:git:https://github.com/io7m/junreachable</developerConnection>
@@ -58,7 +57,7 @@
   </issueManagement>
 
   <distributionManagement>
-    <site child.inherit.append.path="false">
+    <site>
       <id>io7m.com</id>
       <name>io7m.com</name>
       <url>https://www.io7m.com/software/junreachable</url>
