@@ -1,4 +1,4 @@
-name: main-openjdk15-linux
+name: main-openjdk15-windows
 
 on:
   push:
