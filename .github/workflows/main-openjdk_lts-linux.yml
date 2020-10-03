@@ -1,4 +1,4 @@
-name: main-openjdk11-linux
+name: main-openjdk_lts-linux
 
 on:
   push:
