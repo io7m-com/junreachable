@@ -73,8 +73,8 @@
   </distributionManagement>
 
   <ciManagement>
-    <system>Travis CI</system>
-    <url>https://travis-ci.org/io7m/junreachable</url>
+    <system>GitHub Actions</system>
+    <url>https://github.com/junreachable/actions</url>
   </ciManagement>
 
   <prerequisites>
