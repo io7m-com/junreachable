@@ -8,17 +8,17 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor.full</artifactId>
-    <version>3.0.0-beta0023</version>
+    <version>7.0.0</version>
   </parent>
 
   <groupId>com.io7m.junreachable</groupId>
   <artifactId>com.io7m.junreachable</artifactId>
-  <version>3.0.0</version>
+  <version>4.0.0</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.junreachable</name>
   <description>Exception types for marking unreachable/unimplemented code</description>
-  <url>http://github.com/io7m/junreachable</url>
+  <url>https://github.com/io7m/junreachable</url>
 
   <modules>
     <module>com.io7m.junreachable.core</module>
@@ -26,13 +26,13 @@
   </modules>
 
   <properties>
-    <io7m.api.previousVersion>2.1.1</io7m.api.previousVersion>
+    <io7m.api.previousVersion>3.0.0</io7m.api.previousVersion>
   </properties>
 
   <licenses>
     <license>
       <name>ISC License</name>
-      <url>http://io7m.com/license/isc.txt</url>
+      <url>https://io7m.com/license/isc.txt</url>
     </license>
   </licenses>
 
@@ -47,12 +47,12 @@
       <id>io7m</id>
       <name>io7m</name>
       <email>code@io7m.com</email>
-      <url>http://io7m.com</url>
+      <url>https://io7m.com</url>
     </developer>
   </developers>
 
   <issueManagement>
-    <url>http://github.com/io7m/junreachable/issues</url>
+    <url>https://github.com/io7m/junreachable/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -73,8 +73,8 @@
   </distributionManagement>
 
   <ciManagement>
-    <system>Travis CI</system>
-    <url>https://travis-ci.org/io7m/junreachable</url>
+    <system>GitHub Actions</system>
+    <url>https://github.com/junreachable/actions</url>
   </ciManagement>
 
   <prerequisites>
@@ -84,9 +84,26 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>com.io7m.primogenitor</groupId>
+        <artifactId>com.io7m.primogenitor.support</artifactId>
+        <version>7.0.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.annotation.versioning</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.osgi</groupId>
+        <artifactId>org.osgi.annotation.bundle</artifactId>
+        <version>2.0.0</version>
+      </dependency>
+
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <version>4.13.2</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
