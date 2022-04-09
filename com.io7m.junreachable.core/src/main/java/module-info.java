@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017 <code@io7m.com> http://io7m.com
+ * Copyright © 2014 Mark Raynsford <code@io7m.com> https://www.io7m.com
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -20,5 +20,8 @@
 
 module com.io7m.junreachable.core
 {
+  requires static org.osgi.annotation.versioning;
+  requires static org.osgi.annotation.bundle;
+
   exports com.io7m.junreachable;
 }
