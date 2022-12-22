@@ -9,7 +9,7 @@ junreachable
 
 | JVM | Platform | Status |
 |-----|----------|--------|
-| OpenJDK (Temurin) Current | Linux | [![Build (OpenJDK (Temurin) Current, Linux)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/workflows/main.linux.temurin.current.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.linux.temurin.current)|
-| OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/workflows/main.linux.temurin.lts.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.linux.temurin.lts)|
-| OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/workflows/main.windows.temurin.current.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.windows.temurin.current)|
-| OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/workflows/main.windows.temurin.lts.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.windows.temurin.lts)|
+| OpenJDK (Temurin) Current | Linux | [![Build (OpenJDK (Temurin) Current, Linux)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/main.linux.temurin.current.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.linux.temurin.current)|
+| OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/main.linux.temurin.lts.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.linux.temurin.lts)|
+| OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/main.windows.temurin.current.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.windows.temurin.current)|
+| OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m/junreachable/main.windows.temurin.lts.yml)](https://github.com/io7m/junreachable/actions?query=workflow%3Amain.windows.temurin.lts)|
