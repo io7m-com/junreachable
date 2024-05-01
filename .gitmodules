@@ -1,4 +1,4 @@
 [submodule ".jenkins"]
 	path = .jenkins
-	url = https://github.com/io7m/jenkinsfiles
+	url = https://www.github.com/io7m-com/jenkinsfiles
 	shallow = true

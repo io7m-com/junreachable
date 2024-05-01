@@ -54,6 +54,6 @@
   </c:releases>
   <c:ticket-systems>
     <c:ticket-system default="false" id="com.io7m.fossil.junreachable" url="http://fossil.io7m.com/repo.cgi/io7m-junreachable/tktview?name="/>
-    <c:ticket-system default="true" id="com.github.io7m.junreachable" url="http://github.com/io7m/junreachable/issues"/>
+    <c:ticket-system default="true" id="com.github.io7m.junreachable" url="http://www.github.com/io7m-com/junreachable/issues"/>
   </c:ticket-systems>
 </c:changelog>
