@@ -56,9 +56,9 @@
         <c:change date="2024-05-05T00:00:00+00:00" summary="Refresh build metadata and move to new organization."/>
       </c:changes>
     </c:release>
-    <c:release date="2024-05-05T15:00:19+00:00" is-open="true" ticket-system="com.github.io7m.junreachable" version="4.0.2">
+    <c:release date="2024-05-05T15:01:05+00:00" is-open="false" ticket-system="com.github.io7m.junreachable" version="4.0.2">
       <c:changes>
-        <c:change date="2024-05-05T15:00:19+00:00" summary="Fix accidental upgrade to JDK 21."/>
+        <c:change date="2024-05-05T00:00:00+00:00" summary="Fix accidental upgrade to JDK 21."/>
       </c:changes>
     </c:release>
   </c:releases>
