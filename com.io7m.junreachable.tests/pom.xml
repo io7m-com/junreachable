@@ -10,18 +10,29 @@
     <artifactId>com.io7m.junreachable</artifactId>
     <version>4.0.1</version>
   </parent>
-  <artifactId>com.io7m.junreachable.core</artifactId>
+  <artifactId>com.io7m.junreachable.tests</artifactId>
 
   <packaging>jar</packaging>
-  <name>com.io7m.junreachable.core</name>
-  <description>Exception types for marking unreachable/unimplemented code (Core)</description>
+  <name>com.io7m.junreachable.tests</name>
+  <description>Exception types for marking unreachable/unimplemented code (Test suite)</description>
   <url>https://www.io7m.com/software/junreachable</url>
+
+  <properties>
+    <spotbugs.skip>true</spotbugs.skip>
+    <mdep.analyze.skip>true</mdep.analyze.skip>
+    <checkstyle.skip>true</checkstyle.skip>
+  </properties>
 
   <dependencies>
     <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>com.io7m.junreachable.core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <scope>test</scope>
     </dependency>
 
     <dependency>
@@ -42,18 +53,6 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-      </plugin>
-
-      <!-- Ignore dependencies that bytecode analysis gets wrong. -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <configuration>
-          <failOnWarning>true</failOnWarning>
-          <ignoredUnusedDeclaredDependencies>
-            <ignoredUnusedDeclaredDependency>junit:junit:*</ignoredUnusedDeclaredDependency>
-          </ignoredUnusedDeclaredDependencies>
-        </configuration>
       </plugin>
     </plugins>
   </build>
