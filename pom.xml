@@ -13,7 +13,7 @@
 
   <groupId>com.io7m.junreachable</groupId>
   <artifactId>com.io7m.junreachable</artifactId>
-  <version>4.0.1</version>
+  <version>4.0.2</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.junreachable</name>
@@ -26,8 +26,8 @@
   </modules>
 
   <properties>
-    <io7m.api.previousVersion>3.0.0</io7m.api.previousVersion>
-    <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
+    <io7m.api.previousVersion>4.0.0</io7m.api.previousVersion>
+    <io7m.java.targetJavaVersion>17</io7m.java.targetJavaVersion>
   </properties>
 
   <licenses>
